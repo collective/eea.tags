@@ -3,10 +3,15 @@
     i18n_domain="eea">
 
     <includeDependencies package="."/>
+
     <include file="profiles.zcml" />
 
+    <include package="plone.app.registry" />
+    <include package="Products.CMFCore" />
+
     <include package=".browser" />
-    <include package=".widgets" />
+    <include package=".controlpanel" />
     <include package=".upgrades" />
+    <include package=".widgets" />
 
 </configure>
